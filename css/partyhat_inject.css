@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "AleWenches";
+    src: url('chrome-extension://__MSG_@@extension_id__/css/fonts/ALEAWB__.TTF') format("truetype");
+}
+
+@font-face {
+    font-family: "AleWenches";
+    src: url('chrome-extension://__MSG_@@extension_id__/css/fonts/ALEAWBB_.TTF') format("truetype");
+    font-weight: bold;
+}
+
+.partyhat {
+  position: relative;
+  width: 100px; /* Default size */
+  z-index: 9001
+}
+
+.partyhat-handle {
+  background-color: lime;
+  border: 0.1em solid;
+
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 0.25em;
+  
+  /* Depends on default size! */
+  position: absolute;
+  left: 33%;
+  top: 16%;
+}
+
+.partyhat-img {
+  width: inherit;
+  content: url('chrome-extension://__MSG_@@extension_id__/img/partyhat.svg');
+}
+
+.partyhatify-ui-dialog {
+  all: initial;
+  font-family: AleWenches;
+  font-size: small;
+  text-align: center;
+}
+
+.partyhatify-ui-button {
+  color: #2E6E9E !important;
+  width: 100%;
+  margin: 0.3em 0em;
+}
+
+.partyhatify-ui-dialog-title {
+  font-family: AleWenches !important;
+  font-weight: bold;
+  text-align: center;
+}
+
+.partyhatify-ui-button-text {
+  padding: 0.4em;
+}
+
+#dialog-phc button {
+  text-align: center; 
+  font-family: AleWenches;
+}
