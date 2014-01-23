@@ -43,8 +43,8 @@ $.widget("ui.rotatable", $.ui.mouse, {
     this.element.data('scale', this.options.scale);
     this.element.data('angle', this.options.angle);
     performRotation(this.element, this.options.angle, this.options.scale);
-    handle.css('transform','scale('+ 1.0/scale +')');
-    handle.css('-webkit-transform','scale('+ 1.0/scale +')');
+    handle.css('transform','scale('+ 1.0/this.options.scale +')');
+    handle.css('-webkit-transform','scale('+ 1.0/this.options.scale +')');
 
     if (this.options.pivot) {
       this.element.data('xPivot', this.options.pivot[0]);
